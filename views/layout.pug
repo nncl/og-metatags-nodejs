@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title= title
+        meta(name='description', content='Esse é um teste de metatags para incorporar em outros sites a nossa ' +
+        'thumbnail')
+        meta(property='og:description', content='Esse é um teste de metatags para incorporar em outros sites a nossa ' +
+        'thumbnail')
+        meta(property='og:title', content='Metatags')
+        meta(property='og:type', content='product.group')
+        meta(property='og:url', content=`${fullUrl}`)
+        meta(property='og:image', content=`${fullUrl}images/eatp-noveleiros.jpg`)
+
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        block content
