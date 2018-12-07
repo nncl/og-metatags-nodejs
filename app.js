@@ -21,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((req, res, next) => {
     res.locals.fullUrl = req.protocol + '://' + req.headers.host + req.originalUrl;
+    res.locals.fullUrlSecure = 'https://' + req.headers.host + req.originalUrl;
     next();
 });
 app.use('/', indexRouter);
